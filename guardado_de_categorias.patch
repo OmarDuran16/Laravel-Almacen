@@ -1,0 +1,40 @@
+Index: app/config/database.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1252
+===================================================================
+--- app/config/database.php	(revision c524419c978ccc46a30b28513623f57b6fd322aa)
++++ app/config/database.php	(revision )
+@@ -76,10 +76,10 @@
+ 
+ 		'sqlsrv' => array(
+ 			'driver'   => 'sqlsrv',
+-			'host'     => 'LABF21',
++			'host'     => 'LABF13',
+ 			'database' => 'almacen',
+ 			'username' => 'sa',
+-			'password' => 'sa',
++			'password' => '123456',
+ 			'prefix'   => '',
+ 		),
+ 
+Index: app/views/categories.blade.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/views/categories.blade.php	(revision c524419c978ccc46a30b28513623f57b6fd322aa)
++++ app/views/categories.blade.php	(revision )
+@@ -28,9 +28,9 @@
+                 </ol>
+             </div>
+             <div class="col-md-2">
+-                <button type="button" class="btn btn-block btn-primary">
++                <a href="/categorias/crear" class="btn btn-block btn-primary">
+                     <span class="fa fa-plus"></span> Nueva categoría
+-                </button>
++                </a>
+             </div>
+         </div>
+         <!-- /.row -->
+\ No newline at end of file
